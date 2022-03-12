@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.shimeb.orderfood.AboutRestaurant">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/abt_res_appbar"
+            layout="@layout/app_bar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Discription"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/abt_res_location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:drawableRight="@drawable/location_my"
+                android:textColor="@color/blue"
+                android:textSize="20dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/abt_res_abt_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="fddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textSize="17dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Phone"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/abt_res_phone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="0918375696"
+                android:textColor="@color/common_google_signin_btn_text_light_default"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/abt_res_call_icon_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:drawableRight="@drawable/call"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+        </FrameLayout>
+ <LinearLayout
+     android:id="@+id/abt_res_abt_ratingBar_linLayout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:visibility="gone"
+     android:orientation="vertical"
+     android:background="@color/card_shadow_1"
+     >
+        <TextView
+            android:id="@+id/abt_res_rate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Rate rstaurante"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <RatingBar
+            android:id="@+id/abt_res_rateBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:numStars="5"
+            android:rating="0"
+            android:theme="@style/RatingBar"
+            android:layout_column="0"
+            android:isIndicator="false"
+            android:layout_marginLeft="5dp"
+            android:layout_row="1"
+            android:layout_gravity="center"
+            android:transitionName="rating_bar"
+            />
+        <TextView
+            android:id="@+id/abt_res_rate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0918375696"
+            android:gravity="center"
+            android:textColor="@color/common_google_signin_btn_text_light_default"
+            android:textSize="17dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/abt_res_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_marginTop="9dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="@color/card_shadow_1"
+            android:textColor="@color/blue"/>
+     <Button
+            android:id="@+id/abt_res_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edite"
+            android:layout_marginTop="9dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="@color/card_shadow_1"
+            android:textColor="@color/blue"/>
+ </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</android.support.design.widget.CoordinatorLayout>

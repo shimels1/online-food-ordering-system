@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    >
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/transfer_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/transfer_phone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter reciver phone number"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/transfer_phone_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ex. 091837..."
+                    android:inputType="number"/>
+            <TextView
+
+                android:textSize="20dp"
+                android:id="@+id/transfer_amount_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter amount"
+
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+                <EditText
+                    android:id="@+id/transfer_amount_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ex. 200"
+                    android:padding="10dp"
+                    android:background="@drawable/border_for_layout_custom_1px"
+                    android:visibility="gone"
+                    android:inputType="number"/>
+
+
+            <Button
+                android:id="@+id/transfer_next_btn"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="next"
+                android:background="@color/dark_green"
+                android:textColor="@color/bg"/>
+            <Button
+                android:id="@+id/transfer_send_btn"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="send"
+                android:visibility="gone"
+                android:background="@color/dark_green"
+                android:textColor="@color/bg"/>
+
+        </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

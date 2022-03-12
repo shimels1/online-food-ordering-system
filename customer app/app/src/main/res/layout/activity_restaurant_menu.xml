@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.shimeb.orderfood.Restaurant_menu"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/menu_app_bar"
+            layout="@layout/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/menu_app_bar"
+            android:elevation="30dp"
+            android:transitionName="rv_contener_card_view"
+            android:id="@+id/menu_card_view">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/menu_app_bar"
+                android:elevation="15dp">
+
+
+                <ImageView
+                    android:id="@+id/menu_image_view"
+                    android:layout_width="111dp"
+                    android:layout_height="125dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="0"
+                    android:layout_rowSpan="4"
+                    android:layout_columnSpan="1"
+                    android:src="@android:color/holo_green_dark"
+                    android:transitionName="image"/>
+
+                <RatingBar
+                    android:id="@+id/menu_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="0"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:theme="@style/RatingBar"
+                    style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                    android:layout_rowSpan="1"
+                    android:layout_columnSpan="2"
+                    android:transitionName="rating_bar"/>
+
+                <TextView
+                    android:id="@+id/menu_name"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_row="1"
+                    android:layout_rowSpan="1"
+                    android:layout_columnSpan="2"
+                    android:fontFamily="serif"
+                    android:text="wawi piza(love you food)"
+                    android:textColor="@color/black_text"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:transitionName="resturant_name"/>
+
+                <TextView
+                    android:id="@+id/menu_title"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_columnSpan="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_row="2"
+                    android:layout_rowSpan="1"
+                    android:text="pizza*burger*sanduch*tea"
+                    android:textColor="@color/cardview_dark_background"
+                    android:transitionName="title" />
+
+                <TextView
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_row="3"
+                    android:background="@drawable/border_for_open"
+                    android:fontFamily="cursive"
+                    android:padding="2dp"
+                    android:text="Open Time 2:00am-8:00am"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+                <TextView
+                    android:id="@+id/rm_more_about_rest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_columnSpan="1"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_row="4"
+
+                    android:text="More About Restaurant..."
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </GridLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rm_recycler_view">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/menu_fab_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:visibility="invisible">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/menu_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:elevation="10dp"/>
+
+        <TextView
+            android:id="@+id/menu_basketNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="16dp"
+            android:text="5"
+            android:textSize="22dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

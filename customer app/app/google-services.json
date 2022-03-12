@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "362360130074",
+    "firebase_url": "https://orderfood-db49b.firebaseio.com",
+    "project_id": "orderfood-db49b",
+    "storage_bucket": "orderfood-db49b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362360130074:android:f1e2d6da25991e55",
+        "android_client_info": {
+          "package_name": "com.example.shimeb.orderfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362360130074-4c68f93ukjf788eu9s19phd1h49pnpf2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shimeb.orderfood",
+            "certificate_hash": "cceecd5b2b0504f3886d3a41f5ffb55ab9ae8782"
+          }
+        },
+        {
+          "client_id": "362360130074-e4gmqfaskjnjkinurju13aivhk3eta2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe2W3Ldr0O5WjifScjVL9Du4B6WL6n1DE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362360130074-e4gmqfaskjnjkinurju13aivhk3eta2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

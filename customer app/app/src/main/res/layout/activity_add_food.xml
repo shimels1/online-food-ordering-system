@@ -1,0 +1,38 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shimeb.orderfood.add_restorant"
+    android:fitsSystemWindows="true">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="576dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:gravity="center">
+
+        <Spinner
+            android:id="@+id/add_food_cat_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cat_name" />
+            <Button
+                android:id="@+id/add_food_cat_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add image"/>
+
+            <Button
+                android:id="@+id/add_food_cat_add_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add"/>
+            </LinearLayout>
+
+          </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/g1"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/your_location_menu"
+            android:checkable="true"
+            android:icon="@drawable/location_ico_1"
+            android:title="Location" />
+    </group>
+
+
+    <group
+        android:id="@+id/g3"
+
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/orders_menu"
+            android:checkable="true"
+            android:icon="@drawable/order_icon"
+            android:title="Orders" />
+    </group>
+    <group
+        android:id="@+id/g554"
+
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_transfer_balance"
+            android:checkable="true"
+            android:icon="@drawable/dolar_icon"
+            android:title="Transfer Balance" />
+    </group>
+    <group
+        android:id="@+id/g4"
+
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/account_menu"
+            android:checkable="true"
+            android:icon="@drawable/account_icon"
+            android:title="Account" />
+    </group>
+
+    <group
+        android:id="@+id/g54"
+
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_help"
+            android:checkable="true"
+            android:icon="@drawable/help"
+            android:title="Help" />
+    </group> <group
+        android:id="@+id/g5d4"
+
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/exit"
+            android:checkable="true"
+            android:icon="@drawable/exit"
+            android:title="Exit" />
+    </group>
+</menu>

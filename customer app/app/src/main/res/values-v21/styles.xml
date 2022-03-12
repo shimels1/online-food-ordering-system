@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="nav_them" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:checkMarkTint">@color/colorPrimaryDark</item>
+        <item name="android:checkable">@color/colorPrimary</item>
+        <item name="android:checkableBehavior">@color/colorPrimary</item>
+
+
+    </style>
+</resources>
