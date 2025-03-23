@@ -17,7 +17,7 @@ The Online Food Ordering app is an Android application developed using Android S
   </tr>
   <tr>
     <td><img src="https://github.com/shimels1/online-food-ordering-system/blob/main/screenshot/Screenshot_20181030-144152.png" width="200"></td>
-    <td><img src="https://github.com/shimels1/online-food-ordering-system/blob/main/screenshot/Screenshot_20181030-144152.png" width="200"></td>
+    <td><img src="https://github.com/shimels1/online-food-ordering-system/blob/main/screenshot/Screenshot_20181030-144224.png" width="200"></td>
     <td><img src="https://github.com/shimels1/online-food-ordering-system/blob/main/screenshot/Screenshot_20181030-144156.png" width="200"></td>
   </tr>
    <tr>
